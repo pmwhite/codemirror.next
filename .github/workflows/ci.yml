@@ -49,7 +49,7 @@ jobs:
             language/dist/index.js
             language-data/dist/index.js
             lang-xml/dist/index.js
-            legacy-modes/dist/index.js
+            legacy-modes/mode/mllike.js
             lint/dist/index.js
             matchbrackets/dist/index.js
             panel/dist/index.js
