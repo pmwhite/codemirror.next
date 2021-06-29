@@ -54,7 +54,7 @@ export default [
       [ 'Fold', './fold/dist/index.js' ],
       [ 'Gutter', './gutter/dist/index.js' ],
       [ 'Highlight', './highlight/dist/index.js' ],
-      [ 'History', './highlight/dist/index.js' ],
+      [ 'History', './history/dist/index.js' ],
       [ 'Language', './language/dist/index.js' ],
       //[ 'Language_data', './language-data/dist/index.js' ],
       [ 'Lint', './lint/dist/index.js' ],
