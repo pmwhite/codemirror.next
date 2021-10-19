@@ -35,11 +35,13 @@ package-lock.json
 /lang-python
 /lang-css
 /lang-html
+/lang-php
 /lang-sql
 /lang-rust
 /lang-xml
 /lang-markdown
 /lang-lezer
+/lang-wast
 /legacy-modes
 /theme-one-dark
 .tern-*

@@ -9,8 +9,6 @@
     "target": "es6",
     "module": "es2020",
     "newLine": "lf",
-    "declaration": true,
-    "declarationMap": true,
     "moduleResolution": "node",
     "paths": {
       "@codemirror/state": ["./state/src/index.ts"],
@@ -48,6 +46,8 @@
       "@codemirror/lang-xml": ["./lang-xml/src/xml.ts"],
       "@codemirror/lang-markdown": ["./lang-markdown/src/index.ts"],
       "@codemirror/lang-lezer": ["./lang-lezer/src/index.ts"],
+      "@codemirror/lang-php": ["./lang-php/src/php.ts"],
+      "@codemirror/lang-wast": ["./lang-wast/src/wast.ts"],
       "@codemirror/theme-one-dark": ["./theme-one-dark/src/one-dark.ts"]
     }
   },
