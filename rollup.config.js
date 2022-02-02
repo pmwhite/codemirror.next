@@ -69,11 +69,21 @@ export default [
       [ 'Tooltip', './tooltip/dist/index.js' ],
       [ 'View', './view/dist/index.js' ],
       [ 'Legacy_modes_mllike', './legacy-modes/mode/mllike.js' ],
-      [ 'Lang_sql', './lang-sql/dist/index.js' ],
     ],
     output: {
       name: 'codemirror',
       file: 'codemirror.js',
+      format: 'iife'
+    },
+    plugins: pluginOptions,
+  },
+  {
+    input: [
+      [ 'Lang_sql', './lang-sql/dist/index.js' ],
+    ],
+    output: {
+      name: 'codemirror',
+      file: 'lang_sql.js',
       format: 'iife'
     },
     plugins: pluginOptions,
