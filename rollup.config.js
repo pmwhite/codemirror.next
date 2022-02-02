@@ -82,7 +82,7 @@ export default [
       [ 'Lang_sql', './lang-sql/dist/index.js' ],
     ],
     output: {
-      name: 'codemirror',
+      name: 'lang_sql',
       file: 'lang_sql.js',
       format: 'iife'
     },
