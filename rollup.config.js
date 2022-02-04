@@ -74,7 +74,12 @@ export default [
     output: {
       name: 'codemirror',
       dir: 'chunks',
-      format: 'iife'
+      format: 'iife',
+      manualChunks: {
+        codemirror: [ 'Autocomplete', 'Basic_setup', 'Closebrackets', 'Commands', 'Comment', 'Fold', 'Gutter', 'Highlight', 'History', 'Language', 'Lint', 'Matchbrackets', 'Panel', 'Rangeset', 'Rectangular_selection', 'Search', 'State', 'Stream_parser', 'Text', 'Tooltip', 'View' ],
+        lang_sql: [ 'Lang_sql' ],
+        lang_mllike : [ 'Legacy_modes_mllike' ],
+      }
     },
     plugins: pluginOptions,
   },
