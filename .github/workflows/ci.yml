@@ -25,8 +25,4 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          path: codemirror.js
-
-      - uses: actions/upload-artifact@v2
-        with:
-          path: lang_sql.js
+          path: chunks
