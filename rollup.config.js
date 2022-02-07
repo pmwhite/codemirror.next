@@ -1,24 +1,25 @@
 import resolve from '@rollup/plugin-node-resolve';
 import virtual from '@rollup/plugin-virtual';
 import commonjs from '@rollup/plugin-commonjs';
+import iife from 'rollup-plugin-iife';
 
 function multipleModules() {
   const exporter = ([name, path]) => `export * as ${name} from ${JSON.stringify(path)}`;
   let virtualisedEntry;
   let include;
   return {
-    name: 'multiple-modules',
+    name: 'root',
     options(options) {
       include = options.input;
       return {
         ...options,
-        input: 'multiple-modules.js'
+        input: 'root.js'
       };
     },
     outputOptions(options) {
       return {
         ...options,
-        entryFileNames: 'multiple-modules.js',
+        entryFileNames: 'root.js',
       };
     },
     buildStart(options) {
@@ -41,6 +42,7 @@ let pluginOptions = [
     browser: true,
   }),
   commonjs(),
+  iife(),
 ];
 
 export default [
