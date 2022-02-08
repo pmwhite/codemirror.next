@@ -78,6 +78,7 @@ export default [
       dir: 'chunks',
       format: 'esm',
       manualChunks: {
+        stylemod: [ 'style-mod' ],
         text: [ './text/dist/index.js' ],
         state: [ './state/dist/index.js' ],
         rangeset: [ './rangeset/dist/index.js' ],
